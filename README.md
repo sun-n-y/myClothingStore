@@ -6,9 +6,14 @@
 
 - ### vite + react
 - ### tailwind ccs
+- ### daisy ui
 
 ---
 
 ### _Notes_
 
 - install vite + react with tailwinds css
+- install daisy ui
+  - require daisyui AFTER @tailwindcss/typography in tailwind.config.js
+- install other dependencies
+-

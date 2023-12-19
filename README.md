@@ -7,6 +7,7 @@
 - ### vite + react
 - ### tailwind ccs
 - ### daisy ui
+- ### react router
 
 ---
 
@@ -14,6 +15,13 @@
 
 - install vite + react with tailwinds css
 - install daisy ui
+  - npm i -D daisyui@latest @tailwindcss/typography
   - require daisyui AFTER @tailwindcss/typography in tailwind.config.js
 - install other dependencies
+- create pages
+  - index.js
+- route structure
+- error page logic
+  - 404 error
+  - other errors
 -

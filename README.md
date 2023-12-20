@@ -1,6 +1,6 @@
 <a name="custom_anchor_name"></a>
 
-# a clothing store :shirt: :shirt: :jeans:
+# a clothing store :shirt: :jeans:
 
 ## Concepts applied but not limited too
 
@@ -27,4 +27,4 @@
   - other errors
 - create components folder / index js
   - to speed up workflow and decrease redundant logic
--
+- login page structure

@@ -13,7 +13,7 @@ const SubmitBtn = ({ text }) => {
       {isSubmitting ? (
         <span className="loading loading-dots">sending...</span>
       ) : (
-        { text } || 'submit'
+        text || 'submit'
       )}
     </button>
   );

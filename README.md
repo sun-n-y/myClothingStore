@@ -8,6 +8,7 @@
 - ### tailwind ccs
 - ### daisy ui
 - ### react router
+- ### components based structure
 
 ---
 
@@ -18,10 +19,11 @@
   - npm i -D daisyui@latest @tailwindcss/typography
   - require daisyui AFTER @tailwindcss/typography in tailwind.config.js
 - install other dependencies
-- create pages
+- create pages folder
   - index.js
 - route structure
 - error page logic
   - 404 error
   - other errors
--
+- create components folder
+  - index js

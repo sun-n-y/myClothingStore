@@ -28,3 +28,4 @@
 - create components folder / index js
   - to speed up workflow and decrease redundant logic
 - login page structure
+- register page structure

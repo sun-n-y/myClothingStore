@@ -25,5 +25,6 @@
 - error page logic
   - 404 error
   - other errors
-- create components folder
-  - index js
+- create components folder / index js
+  - to speed up workflow and decrease redundant logic
+-

@@ -30,3 +30,4 @@
 - login page structure
 - register page structure
 - create custom class for out pages alignment
+- add header component

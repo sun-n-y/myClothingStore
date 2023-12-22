@@ -9,6 +9,7 @@
 - ### daisy ui
 - ### react router
 - ### components based structure
+- ### local storage api
 
 ---
 
@@ -32,3 +33,4 @@
 - create custom class for out pages alignment
 - add header component
 - add navbar component
+- add themes toggle

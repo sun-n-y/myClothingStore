@@ -29,3 +29,4 @@
   - to speed up workflow and decrease redundant logic
 - login page structure
 - register page structure
+- create custom class for out pages alignment

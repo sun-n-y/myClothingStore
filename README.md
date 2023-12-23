@@ -36,3 +36,4 @@
 - add themes toggle
 - add nav links component
 - add about component
+- add hero component with carousel

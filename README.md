@@ -34,4 +34,5 @@
 - add header component
 - add navbar component
 - add themes toggle
-- add navlinks component
+- add nav links component
+- add about component

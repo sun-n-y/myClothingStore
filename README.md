@@ -10,6 +10,8 @@
 - ### react router
 - ### components based structure
 - ### local storage api
+- ### custom axios instance
+- ### REST api
 
 ---
 
@@ -38,3 +40,4 @@
 - add about component
 - add hero component with carousel
 - add axios custom instance
+- add error element so it wont break entire layout

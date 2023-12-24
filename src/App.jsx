@@ -12,6 +12,7 @@ import {
   Register,
   SingleProduct,
 } from './pages';
+import { ErrorElement } from './components';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        errorElement: <ErrorElement />,
       },
       {
         path: 'about',

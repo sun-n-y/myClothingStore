@@ -44,4 +44,4 @@
 - add landing loader
   - any child components rendered by landing component, has access to loader data, with the use loader data hook
   - this component also can be used on any other page too
--
+- add price formatter

@@ -1,3 +1,4 @@
+import { FeatureProducts } from '../components';
 import Hero from '../components/Hero';
 import authFetch from '../utils';
 
@@ -13,6 +14,7 @@ const Landing = () => {
   return (
     <>
       <Hero />
+      <FeatureProducts />
     </>
   );
 };

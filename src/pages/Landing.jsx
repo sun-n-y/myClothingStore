@@ -1,6 +1,6 @@
 import { FeatureProducts } from '../components';
 import Hero from '../components/Hero';
-import authFetch from '../utils';
+import authFetch from '../utils/index';
 
 const url = '/products?featured=true';
 

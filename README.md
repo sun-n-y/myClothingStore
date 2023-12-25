@@ -45,3 +45,7 @@
   - any child components rendered by landing component, has access to loader data, with the use loader data hook
   - this component also can be used on any other page too
 - add price formatter
+- add single product fetch, destructure, and render
+- add select color
+- add select qty
+- add cart btn

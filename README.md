@@ -12,6 +12,7 @@
 - ### local storage api
 - ### custom axios instance
 - ### REST api
+- ### form data api
 - ### pagination
 
 ---
@@ -51,3 +52,4 @@
 - add select qty
 - add cart btn
 - add products page
+- add filters

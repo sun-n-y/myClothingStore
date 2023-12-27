@@ -1,5 +1,3 @@
-import { useLoaderData } from 'react-router-dom';
-
 const FormSelect = ({ label, name, list, defaultValue, size }) => {
   return (
     <div className="form-control">

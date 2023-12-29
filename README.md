@@ -52,6 +52,7 @@
 - add select qty
 - add cart btn
 - add products page
+- add global loading for better ux
 - add filters
   - in react router dom; for inputs, the name attr is important because the backend is looking for the exact value.
   - upon form submission the request is sent back the same page in query string

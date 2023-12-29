@@ -24,7 +24,9 @@ const PaginationContainer = () => {
         <button
           className="btn btn-xs sm:btn-md join-item"
           onClick={() => {
-            handlePageChange('prev');
+            let prevPage = page - 1;
+            if (prevPage < 1) prevPage = pageCount;
+            handlePageChange(prevPage);
           }}
         >
           Prev
@@ -47,7 +49,9 @@ const PaginationContainer = () => {
         <button
           className="btn btn-xs sm:btn-md join-item"
           onClick={() => {
-            handlePageChange('next');
+            let nextPage = page + 1;
+            if (nextPage > pageCount) nextPage = 1;
+            handlePageChange(nextPage);
           }}
         >
           Next

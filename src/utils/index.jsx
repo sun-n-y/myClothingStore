@@ -25,3 +25,9 @@ export const generateOptionAmounts = (number) => {
     );
   });
 };
+
+export const getLayoutType = () => {
+  const layoutType = localStorage.getItem('layoutType');
+  const layout = layoutType ? layoutType : 'grid';
+  return layout;
+};

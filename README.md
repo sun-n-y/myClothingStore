@@ -59,3 +59,4 @@
 - we can now use the loader to get those params and pass them into the custom fetch
 - also pass down to the inputs as default values so they are not cleared unless reset btn is clicked, which clears the params in the url
 - add pagination
+- add layout type from locale storage

@@ -73,3 +73,5 @@
   - set up provider in main jsx
     - wrap around app
   - access store value in component
+    - useSelector
+  - dispatch add item

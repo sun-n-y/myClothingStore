@@ -1,6 +1,8 @@
 import { Link, useLoaderData } from 'react-router-dom';
 import authFetch, { formatPrice, generateOptionAmounts } from '../utils/index';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../features/cart/cartSlice';
 
 export const loader = async ({ params }) => {
   const response = await authFetch(`/products/${params.id}`);
@@ -18,6 +20,22 @@ const SingleProduct = () => {
 
   const handleAmountChange = (e) => {
     setAmount(parseInt(e.target.value));
+  };
+
+  const dispatch = useDispatch();
+
+  const cartProduct = {
+    productID: product.id,
+    cartID: product.id + productColor,
+    title,
+    company,
+    price,
+    image,
+    amount,
+  };
+
+  const addToCart = () => {
+    dispatch(addItem({ product: cartProduct }));
   };
 
   return (
@@ -84,10 +102,7 @@ const SingleProduct = () => {
           </div>
           {/* CART BTN */}
           <div className="mt-10">
-            <button
-              className="btn btn-secondary btn-md"
-              onClick={() => console.log('added to bag')}
-            >
+            <button className="btn btn-secondary btn-md" onClick={addToCart}>
               Add to bag
             </button>
           </div>

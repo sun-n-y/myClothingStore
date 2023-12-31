@@ -14,6 +14,8 @@
 - ### REST api
 - ### form data api
 - ### pagination
+- ### toastify
+- ### redux toolkit
 
 ---
 
@@ -60,3 +62,14 @@
 - also pass down to the inputs as default values so they are not cleared unless reset btn is clicked, which clears the params in the url
 - add pagination
 - add layout type from locale storage
+- add toastify
+- add redux toolkit
+  - create cart slice
+    - for all cart functionality
+  - create store
+    - entire state for application
+    - import cart reducer, fx that modifies state of cart slice
+    - key name is needed can be w/e, will be accessed later to control state
+  - set up provider in main jsx
+    - wrap around app
+  - access store value in component

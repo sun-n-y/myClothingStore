@@ -74,4 +74,6 @@
     - wrap around app
   - access store value in component
     - useSelector
-  - dispatch add item
+  - dispatch additem
+  - build add item reducer
+    - this reducer updates the cart state when a product is added

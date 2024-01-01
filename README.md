@@ -77,3 +77,5 @@
   - dispatch additem
   - build add item reducer
     - this reducer updates the cart state when a product is added
+- add get cart items from locale storage
+- add refactoring to reducers

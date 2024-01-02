@@ -80,3 +80,4 @@
 - add get cart items from locale storage
 - add refactoring to reducers
 - add case reducer
+- add cart page

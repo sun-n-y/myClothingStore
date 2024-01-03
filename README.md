@@ -81,3 +81,4 @@
 - add refactoring to reducers
 - add case reducer
 - add cart page
+- add user slice

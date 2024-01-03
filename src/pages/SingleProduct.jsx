@@ -32,6 +32,7 @@ const SingleProduct = () => {
     price,
     image,
     amount,
+    productColor,
   };
 
   const addToCart = () => {

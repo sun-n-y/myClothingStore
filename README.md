@@ -7,6 +7,7 @@
 - ### vite + react
 - ### tailwind ccs
 - ### daisy ui
+- ### mobile first development
 - ### react router
 - ### components based structure
 - ### local storage api
@@ -82,3 +83,4 @@
 - add case reducer
 - add cart page
 - add user slice
+- add login logout feature

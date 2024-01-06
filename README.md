@@ -84,3 +84,4 @@
 - add cart page
 - add user slice
 - add login logout feature
+- add register user feature

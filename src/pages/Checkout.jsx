@@ -4,7 +4,8 @@ import { toast } from 'react-toastify';
 import { redirect } from 'react-router-dom';
 
 export const loader = (store) => async () => {
-  const user = store.getState().user;
+  const user = store.getState().userState;
+  console.log(user);
   if (!user) {
     toast.warning('You must be logged in to checkout');
     return redirect('/login');

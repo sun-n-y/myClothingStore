@@ -87,4 +87,5 @@
 - add register user action
 - add login user action
 - add checkout form component
-- add checkout page route restriction
+- add checkout page route access restriction
+  - by using the loader function

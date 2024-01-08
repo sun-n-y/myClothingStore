@@ -86,3 +86,5 @@
 - add login logout feature
 - add register user action
 - add login user action
+- add checkout form component
+- add checkout page route restriction

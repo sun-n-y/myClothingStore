@@ -37,6 +37,10 @@ export const action =
       return redirect('/orders');
     } catch (error) {
       console.log(error);
+      if (error.response.status === 401) {
+        toast.warning('error in credentials please log in');
+        return redirect('/login');
+      }
       toast.error(
         error?.response?.data?.error?.message || 'Error in placing your order'
       );

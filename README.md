@@ -90,3 +90,4 @@
 - add checkout page route access restriction
   - by using the loader function
 - add checkout form
+- add authentication error check

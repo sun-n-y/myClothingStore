@@ -75,7 +75,7 @@
     - wrap around app
   - access store value in component
     - useSelector
-  - dispatch additem
+  - dispatch addItem
   - build add item reducer
     - this reducer updates the cart state when a product is added
 - add get cart items from locale storage
@@ -89,3 +89,4 @@
 - add checkout form component
 - add checkout page route access restriction
   - by using the loader function
+- add checkout form

@@ -12,7 +12,7 @@
 - ### components based structure
 - ### local storage api
 - ### custom axios instance
-- ### REST api
+- ### RESTful api
 - ### form data api
 - ### pagination
 - ### toastify

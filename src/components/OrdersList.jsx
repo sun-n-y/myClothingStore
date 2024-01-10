@@ -7,8 +7,8 @@ const OrdersList = () => {
   const { orders, meta } = useLoaderData();
 
   return (
-    <>
-      <h4>Total Orders : {meta.pagination.total}</h4>
+    <div className="mt-8">
+      <h4 className="mb-4">Total Orders : {meta.pagination.total}</h4>
       <div className="overflow-x-auto">
         <table className="table table-zebra">
           <thead>
@@ -38,7 +38,7 @@ const OrdersList = () => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 

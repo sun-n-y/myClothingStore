@@ -6,8 +6,6 @@ const ComplexPaginationContainer = () => {
   const { search, pathname } = useLocation();
   const navigate = useNavigate();
 
-  console.log(meta);
-
   const handlePageChange = (pageNumber) => {
     const searchParams = new URLSearchParams(search);
     searchParams.set('page', pageNumber);

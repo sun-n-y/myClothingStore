@@ -92,3 +92,4 @@
 - add checkout form
 - add authentication error check
 - add orders page request
+- add orders list render

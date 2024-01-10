@@ -20,7 +20,7 @@ export const loader =
       const response = await authFetch.get('/orders', {
         headers: { Authorization: `Bearer ${user.token}` },
       });
-      return { data: response.data.data, meta: response.data.meta, params };
+      return { orders: response.data.data, meta: response.data.meta, params };
     } catch (error) {
       console.log(error);
       const errorMessage =
@@ -33,7 +33,7 @@ export const loader =
   };
 
 const Orders = () => {
-  const { data, meta, params } = useLoaderData();
+  const { meta } = useLoaderData();
 
   if (meta.pagination.total < 1) {
     return <SectionTitle text="Please make an order" />;

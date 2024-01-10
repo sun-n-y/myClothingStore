@@ -91,3 +91,4 @@
   - by using the loader function
 - add checkout form
 - add authentication error check
+- add orders page request

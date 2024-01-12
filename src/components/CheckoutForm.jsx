@@ -34,6 +34,7 @@ export const action =
       );
       store.dispatch(clearCart());
       toast.success('Order placed successfully');
+      queryClient.removeQueries(['orders']);
       return redirect('/orders');
     } catch (error) {
       console.log(error);

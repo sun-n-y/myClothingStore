@@ -6,7 +6,11 @@ import OrdersList from '../components/OrdersList';
 
 const loaderQuery = (user, params) => {
   return {
-    queryKey: ['orders', user.username],
+    queryKey: [
+      'orders',
+      user.username,
+      params.page ? parseInt(params.page) : 1,
+    ],
     queryFn: () =>
       authFetch.get('/orders', {
         params,

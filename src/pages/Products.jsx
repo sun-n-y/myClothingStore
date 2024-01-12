@@ -2,8 +2,9 @@ import Filters from '../components/Filters';
 import { PaginationContainer, ProductsContainer } from '../components';
 import authFetch from '../utils';
 
-const productsQuery = (params) => {
-  const { category, company, order, price, search, shipping } = params;
+const productsQuery = (queryParams) => {
+  const { category, company, order, price, search, shipping, page } =
+    queryParams;
 
   return {
     queryKey: [
@@ -14,8 +15,9 @@ const productsQuery = (params) => {
       order ?? 'a-z',
       price ?? 100000,
       shipping ?? false,
+      page ?? 1,
     ],
-    queryFn: () => authFetch(`/products`, { params }),
+    queryFn: () => authFetch(`/products`, { params: queryParams }),
   };
 };
 

@@ -4,8 +4,13 @@ import authFetch from '../utils/index';
 
 const url = '/products?featured=true';
 
+const landingPageQuery = {
+  queryKey: ['landing'],
+  queryFn: () => authFetch(url),
+};
+
 export const loader = (queryClient) => async () => {
-  const response = await authFetch(url);
+  const response = await queryClient.ensureQueryData(landingPageQuery);
   const products = response.data.data;
   return { products };
 };

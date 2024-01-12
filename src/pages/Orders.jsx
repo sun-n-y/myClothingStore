@@ -4,6 +4,17 @@ import authFetch from '../utils';
 import { ComplexPaginationContainer, SectionTitle } from '../components';
 import OrdersList from '../components/OrdersList';
 
+const loaderQuery = (user, params) => {
+  return {
+    queryKey: ['orders', user.username],
+    queryFn: () =>
+      authFetch.get('/orders', {
+        params,
+        headers: { Authorization: `Bearer ${user.token}` },
+      }),
+  };
+};
+
 export const loader =
   (store, queryClient) =>
   async ({ request }) => {
@@ -17,10 +28,9 @@ export const loader =
     ]);
 
     try {
-      const response = await authFetch.get('/orders', {
-        params,
-        headers: { Authorization: `Bearer ${user.token}` },
-      });
+      const response = await queryClient.ensureQueryData(
+        loaderQuery(user, params)
+      );
       return { orders: response.data.data, meta: response.data.meta };
     } catch (error) {
       console.log(error);

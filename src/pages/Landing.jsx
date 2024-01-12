@@ -4,7 +4,7 @@ import authFetch from '../utils/index';
 
 const url = '/products?featured=true';
 
-export const loader = async () => {
+export const loader = (queryClient) => async () => {
   const response = await authFetch(url);
   const products = response.data.data;
   return { products };

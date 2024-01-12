@@ -5,7 +5,7 @@ import { ComplexPaginationContainer, SectionTitle } from '../components';
 import OrdersList from '../components/OrdersList';
 
 export const loader =
-  (store) =>
+  (store, queryClient) =>
   async ({ request }) => {
     const user = store.getState().userState.user;
     if (!user) {

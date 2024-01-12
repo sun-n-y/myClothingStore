@@ -6,7 +6,7 @@ import FormInput from './FormInput';
 import { clearCart } from '../features/cart/cartSlice';
 
 export const action =
-  (store) =>
+  (store, queryClient) =>
   async ({ request }) => {
     const formData = await request.formData();
     const { name, address } = Object.fromEntries(formData);

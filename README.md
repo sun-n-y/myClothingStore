@@ -94,3 +94,4 @@
 - add orders page request
 - add orders list render
 - add complex pagination
+- add react query

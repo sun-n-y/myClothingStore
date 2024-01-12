@@ -17,6 +17,7 @@
 - ### pagination
 - ### toastify
 - ### redux toolkit
+- ### react query
 
 ---
 
